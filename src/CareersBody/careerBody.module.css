@@ -176,6 +176,7 @@
     margin-bottom: 10px;
     position: relative;
     font-size: clamp(14px, 0.9vw, 22px);
+    list-style: none;
   }
   
   .jobSection li::before {

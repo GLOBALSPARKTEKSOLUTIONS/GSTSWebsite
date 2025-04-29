@@ -255,7 +255,7 @@ Link {
     font-size: clamp(14px, 1vw, 16px);
   }
   .mapWrapper{
-    height: 280px;
+    height: 250px;
   }
   .mapStyles{
     height: 100%;

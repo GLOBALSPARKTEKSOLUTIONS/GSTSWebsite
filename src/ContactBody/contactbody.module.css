@@ -71,7 +71,7 @@
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  /* gap: 10px; */
 }
  
 .fieldContainer {
@@ -131,7 +131,7 @@ textarea {
   padding: 10px;
   border-radius: 8px;
   font-size: clamp(14px, 0.9vw, 22px);
-    color: #1c3681;
+  color: #1c3681;
   transition: border-color 0.3s, box-shadow 0.3s;
   outline: none;
 }
@@ -157,7 +157,7 @@ textarea {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 8px;
+  /* margin-top: 3px; */
 }
  
 .btn:hover {
@@ -214,41 +214,58 @@ textarea {
  
 @media screen and (max-width:767px) {
   .parallaxSection {
-   min-height: 130vh;
+    min-height: 130vh;
   }
-  .formContainer{
+ 
+  .formContainer {
     width: 80%;
     top: 70%;
     left: 5%;
   }
+ 
   .overlay h2 {
-   
+ 
     top: 20%;
     left: 10%;
   }
+ 
   .overlay p:nth-of-type(1) {
     top: 30%;
     left: 10%;
   }
+ 
   .overlay p:nth-of-type(2) {
     top: 37%;
     left: 10%;
   }
-  .formContainer{
+ 
+  .formContainer {
     width: 80%;
     top: 60%;
     left: 5%;
   }
 }
+ 
 @media screen and (min-width:768px) and (max-width:1200px) {
   .parallaxSection {
     min-height: 130vh;
-   }
+  }
  
-  .formContainer{
+  .formContainer {
     width: 80%;
-    height:auto;
+    height: auto;
     top: 80%;
     left: 5%;
   }
 }
+ 
+ 
+.error {
+color: red;
+   font-size: 0.8em;
+ margin-top: 0.2em;
+  display: block;
+ 
+ 
+}
+ 

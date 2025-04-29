@@ -1,5 +1,4 @@
 #mainContainer {
-
     width: 100%;
     display: flex;
     justify-content: center;
@@ -35,7 +34,6 @@
     text-align: center !important;
     color: #1c3681;
     font-size: clamp(24px, 1.5vw, 48px);
-    margin-top: 20px;
     font-weight: bold;
 }
 
@@ -57,14 +55,7 @@
     display: flex;
     overflow: hidden;
     scroll-behavior: smooth;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-.imagesContainer {
-    width: 85%;
-    margin: auto;
+    padding: 10px 20px;
 }
 
 .slide {
@@ -75,6 +66,7 @@
 }
 
 .eachImg {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
     background: #fff;
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -84,6 +76,11 @@
     padding-bottom: 60%;
     position: relative;
     cursor: pointer;
+}
+
+.eachImg:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .images {
@@ -99,36 +96,36 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    background-position: 30px 40px;
 }
 
 .serv {
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 50%;
+    transform: translateX(-50%);
     display: none;
+    text-align: center;
 }
 
-.serviceName {
-    color: #1A202C;
-    font-weight: bold;
+.serv .serviceName {
+    color: #302a1f;
+    font-weight: 700;
+    font-size: clamp(14px, 1vw, 16px);
+    margin: 0;
+    transition: color 0.3s ease, transform 0.3s ease, font-size 0.3s ease;
 }
 
-.btnClass {
-    background-color: #4A5568;
+.serv .btnClass {
+    background-color: transparent;
+    border: 1px solid #ffb75e;
     border-radius: 5px;
-    border: none;
-    color: #fff;
+    color: #ffb75e;
+    font-weight: 700;
+    font-size: clamp(14px, 1vw, 16px);
     margin-top: 10px;
-    padding: 5px;
-    font-weight: bold;
-}
-
-
-.serv .btnClass:hover {
-    border: none;
-    background-color: #FFC107;
-    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, transform 0.3s ease;
 }
 
 .images:hover img {
@@ -137,30 +134,40 @@
     opacity: 0.5;
 }
 
-.images:hover {
-    background-color: #F5E8C7;
-    border-radius: 10px;
-}
-
 .images:hover .serv {
-    background-color: transparent;
     display: block;
-    width: 50%;
-    padding: 20px;
     animation: service 1s ease;
     animation-fill-mode: forwards;
 }
 
+.images:hover .serv .serviceName {
+    color: #000000; /* White for high contrast */
+    font-size: clamp(16px, 1.2vw, 18px); /* Slightly larger */
+    font-weight: 800; /* Bolder */
+    text-decoration: solid;
+    
+    text-shadow: 0 2px 4px rgb(137, 136, 136); /* Shadow for readability */
+    transform: scale(1.1);
+    /*background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.images:hover .serv .btnClass {
+    background: linear-gradient(#ffb75e, #ed8f03);
+    color: #fff;
+    border: none;
+    transform: scale(1.05);
+}
 
 @keyframes service {
     0% {
         opacity: 0;
-        transform: translate(-40px, 60px);
+        transform: translate(-50%, 60px);
     }
-
     100% {
         opacity: 1;
-        transform: translate(-40px, 20px);
+        transform: translate(-50%, 20px);
     }
 }
 
@@ -168,35 +175,24 @@
     width: 80%;
     margin: auto;
     text-align: center;
-
+    font-size: clamp(14px, 1vw, 16px);
 }
 
-.spanText,
-.serviceName,
-.btnClass {
-    font-size: clamp(14px, 0.9vw, 22px);
-}
-
-
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     #mainContainer {
         width: 95%;
         margin: 20px auto;
-        
     }
 
     .slide {
         display: flex;
         flex-direction: column;
-        /* overflow-y: auto; */
-       
     }
 
     .eachImg {
-        width: 100%;
+        width: 80%;
         height: auto;
         margin: auto;
-
     }
 
     .images {
@@ -209,21 +205,25 @@
     .serv {
         top: 10%;
     }
-    .images:hover .serv{
-        animation: service 1s ease;
-        animation-fill-mode: forwards;
+
+    .images:hover .serv .serviceName {
+        font-size: clamp(14px, 1.2vw, 16px); /* Adjusted for mobile */
+        padding: 3px 8px;
     }
-    @keyframes service {
-        0% {
-            opacity: 0;
-            transform: translate(-40px, -120px);
-        }
-    
-        100% {
-            opacity: 1;
-            transform: translate(-40px, -60px);
-        }
-    }
-    
 }
 
+@media screen and (min-width: 2559px) {
+    .serviceTitle {
+        font-size: clamp(20px, 1.5vw, 48px);
+    }
+
+    .spanText,
+    .serviceName,
+    .btnClass {
+        font-size: clamp(22px, 1vw, 24px);
+    }
+
+    .images:hover .serv .serviceName {
+        font-size: clamp(24px, 1.2vw, 26px); /* Larger for big screens */
+    }
+}

@@ -11,8 +11,6 @@ const CarouselServices = () => {
         { src: require('../../Assets/vbcs1.png'), name: "Oracle VBCS", title: "Learn More", id: "vbcs" },
         { src: require('../../Assets/react.jfif'), name: "React JS", title: "Learn More", id: "react" },
         { src: require('../../Assets/react native.jfif'), name: "React Native", title: "Learn More", id: "react-native" },
-
-
     ];
 
     const containerRef = useRef();
@@ -56,35 +54,37 @@ const CarouselServices = () => {
                     </div>
                     <div>
                         <p className={styles.spanText}>
-                            Global Spark Tek Solutions help your organization realize its strategic goals. Our talented team has the expertise to excel in multiple IT disciplines, which can help with your company's IT requirements.</p>
+                            Global Spark Tek Solutions help your organization realize its strategic goals. Our talented team has the expertise to excel in multiple IT disciplines, which can help with your company's IT requirements.
+                        </p>
                     </div>
                 </div>
                 <div className={styles.imgContainer} ref={containerRef}>
                     {Array.from({ length: totalSlides }).map((_, slideIndex) => (
-                        <div className={styles.imagesContainer}>
-                            <div key={slideIndex} className={styles.slide}>
-                                {images.slice(slideIndex * 6, (slideIndex + 1) * 6).map((item, index) => (
-                                    <div key={index} className={styles.eachImg}>
-                                        <div className={styles.images}>
-                                            <img src={item.src} alt={item.name} />
-                                            <div className={styles.serv}>
-                                                <p className={styles.serviceName}>{item.name}</p>
-                                                <button
-                                                    onClick={() => handleLearnMore(item.id)}
-                                                    className={styles.btnClass}>
-                                                    {item.title}
-                                                </button>
-                                            </div>
+                        <div key={slideIndex} className={styles.slide}>
+                            {images.slice(slideIndex * 6, (slideIndex + 1) * 6).map((item, index) => (
+                                <div key={index} className={styles.eachImg}>
+                                    <div className={styles.images}>
+                                        <img src={item.src} alt={item.name} />
+                                        <div className={styles.serv}>
+                                            <p className={styles.serviceName}>
+                                                {item.name.split('').map((char, charIndex) => (
+                                                    <span key={charIndex} className={styles.letter} style={{ animationDelay: `${charIndex * 0.05}s` }}>
+                                                        {char}
+                                                    </span>
+                                                ))}
+                                            </p>
+                                            <button onClick={() => handleLearnMore(item.id)} className={styles.btnClass}>
+                                                {item.title}
+                                            </button>
                                         </div>
                                     </div>
-                                ))}
-                            </div>
+                                </div>
+                            ))}
                         </div>
                     ))}
                 </div>
             </div>
         </div>
-
     );
 };
 

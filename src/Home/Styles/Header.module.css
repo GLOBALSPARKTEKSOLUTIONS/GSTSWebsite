@@ -300,7 +300,7 @@
   }
 }
 
-@media (min-width:959px) and (max-width:1025px) {
+@media (min-width:959px) and (max-width:1240px) {
   .logo {
     flex: 0.3;
 
@@ -323,11 +323,10 @@
   .navList {
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content:space-evenly;
     align-items: center;
     margin: 10px;
     list-style: none;
-
   }
 
   .navItem {

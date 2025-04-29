@@ -200,7 +200,6 @@ Link {
   }
   .mapWrapper{
     height: 400px;
-    border: 4px solid #000;
   }
   .mapStyles{
     height: 100%;
@@ -209,7 +208,6 @@ Link {
 @media screen and (min-width:768px) and (max-width:1023px) {
   .mapWrapper{
     height: 300px;
-    border: 3px solid #000;
   }
   .mapStyles{
     height: 100%;
@@ -245,9 +243,9 @@ Link {
     max-width: 160px;
   }
 
-  .mapWrapper {
-    height: 180px;
-  }
+  /* .mapWrapper {
+    height: 170px;
+  } */
 
   .subFooterText {
     font-size: clamp(14px, 1vw, 16px);
@@ -257,8 +255,7 @@ Link {
     font-size: clamp(14px, 1vw, 16px);
   }
   .mapWrapper{
-    height: 300px;
-    border: 3px solid #000;
+    height: 280px;
   }
   .mapStyles{
     height: 100%;
@@ -278,7 +275,6 @@ Link {
   }
   .mapWrapper{
     height: 500px;
-    border: 3px solid #000;
   }
   .mapStyles{
     height: 100%;

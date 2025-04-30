@@ -25,12 +25,20 @@
     "react-dom": "^18.3.1",
     "react-icons": "^5.5.0",
     "react-quill": "^2.0.0",
-    "react-router-dom": "^7.5.0",
-    "react-scripts": "^5.0.1",
+  "quill": "^2.0.0",
+  "react-router-dom": "^7.5.3",
+  "react-scripts": "^5.0.1",
     "react-slick": "^0.30.2",
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
+  "overrides": {
+  "quill": "^2.0.0",
+  "svgo": "^3.3.2",
+  "resolve-url-loader": "^5.0.0",
+  "postcss": "^8.4.31",
+  "nth-check": "^2.0.1"
+},
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",

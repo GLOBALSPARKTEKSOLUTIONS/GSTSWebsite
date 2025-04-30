@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-    width: 18%;
+    width: 20%;
     height:260px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -64,15 +64,27 @@ body {
 .content p {
     text-align: center;
     font-size: clamp(14px, 0.9vw, 22px);
-    line-height: 1.7;
+    line-height: 1.5;
     color: #555555;
 }
 
 .title h5 {
-    color: #d9b99b;
-    font-weight: 700;
+    color: hsl(29, 45%, 73%);
+    font-weight: bold;
     font-size: clamp(16px, 0.9vw, 18px);
+    text-shadow: 0 2px 2px rgb(137, 136, 136); /* Shadow for readability */
+
 }
+.title h5 {
+    color: hsla(29, 94%, 49%, 0.758); 
+    font-weight: 600; 
+    font-size: clamp(18px, 1.2vw, 22px); 
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
+    margin-bottom: 0.5rem; 
+    line-height: 1.4; 
+}
+
 
 .container:hover {
     background-color: #eeeeee;
@@ -128,7 +140,7 @@ body {
 
 }
 
-@media screen and (min-width:768px) and (max-width:1440px) {
+@media screen and (min-width:768px) and (max-width:1240px) {
    .container{
     width: 80%;
     height: auto;

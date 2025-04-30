@@ -256,7 +256,6 @@ Link {
   }
   .mapWrapper{
     height: 250px;
-    border: 3px solid #000;
   }
   .mapStyles{
     height: 100%;

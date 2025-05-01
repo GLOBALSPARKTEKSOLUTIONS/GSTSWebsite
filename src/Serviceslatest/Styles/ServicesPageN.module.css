@@ -1,12 +1,12 @@
 .pageContainer {
   background: linear-gradient(135deg, #e0f2fe 0%, #fef3e8 100%);
-  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   background-color: red;
   padding-bottom: 10px;
 
 }
+
 .heroSection {
   background: url('../../Assets/ServicesCOver.jpg') no-repeat center center,
     linear-gradient(135deg, rgb(28, 54, 129), #aac2f4);
@@ -237,12 +237,13 @@
 }
 
 @media (min-width: 768px) {
-  
+
   .contentArea {
     width: 80%;
     margin: 0;
 
   }
+
   .contentFlex {
     flex-direction: row;
   }
@@ -253,7 +254,7 @@
 
   .tab {
     min-width: 230px;
-    padding:5px;
+    padding: 5px;
   }
 
   .tabs {
@@ -285,7 +286,7 @@
   .contentContainer {
     width: 80%;
     margin: auto;
- 
+
   }
 
   .contentFlex {
@@ -324,8 +325,9 @@
   .heroTitle {
     left: 40%;
     bottom: 20%;
-  
+
   }
+
   .heroSection {
     background-size: cover;
     position: relative;
@@ -339,17 +341,3 @@
     text-align: center;
   }
 }
-
-/* @media screen and (min-width:1025px) {
-  .heroTitle {
-    left:50%;
-    bottom: 20%;
-    transform: translate(-50%, -50%);
-  }
-
-  .heroSubtitle {
-    bottom: 13%;
-    left: 35%;
-    text-align: center;
-  }
-} */

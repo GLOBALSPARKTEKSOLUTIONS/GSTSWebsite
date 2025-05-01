@@ -141,14 +141,13 @@
 }
 
 .images:hover .serv .serviceName {
-    color: #000000; /* White for high contrast */
-    font-size: clamp(16px, 1.2vw, 18px); /* Slightly larger */
-    font-weight: 800; /* Bolder */
+    color: #000000;
+    font-size: clamp(16px, 1.2vw, 18px);
+    font-weight: 800;
     text-decoration: solid;
-    
-    text-shadow: 0 2px 4px rgb(137, 136, 136); /* Shadow for readability */
+
+    text-shadow: 0 2px 4px rgb(137, 136, 136);
     transform: scale(1.1);
-    /*background: rgba(0, 0, 0, 0.3); /* Semi-transparent background */
     padding: 5px 10px;
     border-radius: 5px;
 }
@@ -165,6 +164,7 @@
         opacity: 0;
         transform: translate(-50%, 60px);
     }
+
     100% {
         opacity: 1;
         transform: translate(-50%, 20px);
@@ -207,7 +207,7 @@
     }
 
     .images:hover .serv .serviceName {
-        font-size: clamp(14px, 1.2vw, 16px); /* Adjusted for mobile */
+        font-size: clamp(14px, 1.2vw, 16px);
         padding: 3px 8px;
     }
 }
@@ -224,6 +224,6 @@
     }
 
     .images:hover .serv .serviceName {
-        font-size: clamp(24px, 1.2vw, 26px); /* Larger for big screens */
+        font-size: clamp(24px, 1.2vw, 26px);
     }
 }

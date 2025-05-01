@@ -51,7 +51,7 @@ body {
 
 .container {
     width: 20%;
-    height:260px;
+    height: 260px;
     border: 1px solid #ddd;
     border-radius: 20px;
     background-color: #fff;
@@ -72,17 +72,18 @@ body {
     color: hsl(29, 45%, 73%);
     font-weight: bold;
     font-size: clamp(16px, 0.9vw, 18px);
-    text-shadow: 0 2px 2px rgb(137, 136, 136); /* Shadow for readability */
+    text-shadow: 0 2px 2px rgb(137, 136, 136);
 
 }
+
 .title h5 {
-    color: hsla(29, 94%, 49%, 0.758); 
-    font-weight: 600; 
-    font-size: clamp(18px, 1.2vw, 22px); 
+    color: hsla(29, 94%, 49%, 0.758);
+    font-weight: 600;
+    font-size: clamp(18px, 1.2vw, 22px);
     letter-spacing: 0.5px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); 
-    margin-bottom: 0.5rem; 
-    line-height: 1.4; 
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
 }
 
 
@@ -120,37 +121,41 @@ body {
 @media (max-width: 767px) {
     .mainDiv {
         width: 90%;
-        margin:  20px auto;
+        margin: 20px auto;
     }
+
     .innerContainer {
         width: auto;
     }
+
     .wrapper {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
+
     .container {
         width: 80%;
         height: auto;
     }
-    .innerContainer{
+
+    .innerContainer {
         box-shadow: none;
     }
 
 }
 
 @media screen and (min-width:768px) and (max-width:1240px) {
-   .container{
-    width: 80%;
-    height: auto;
-   }
-}
-
-@media (min-width: 1940px) {
-    .container{
+    .container {
         width: 80%;
         height: auto;
     }
-    
+}
+
+@media (min-width: 1940px) {
+    .container {
+        width: 80%;
+        height: auto;
+    }
+
 }

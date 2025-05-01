@@ -5,17 +5,13 @@ import ErrorPage from "./errorPage";
 
 
 
-const ErrorHome  = ()=>{
+const ErrorHome = () => {
 
-
-
-
-    return(
+    return (
         <>
-        <Header/>
-        <ErrorPage/>
-        <ContentFooter/>
-        
+            <Header />
+            <ErrorPage />
+            <ContentFooter />
         </>
     )
 }

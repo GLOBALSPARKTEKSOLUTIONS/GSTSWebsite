@@ -1,32 +1,18 @@
 import AboutUs from "../About/Screens/AboutUs"
-import Footer from "../Home/Screens/Footer"
 import Header from "../Home/Screens/Header"
 import ContentFooter from "../Services/Screens/ContentFooter"
 
 
+const AboutPage = () => {
 
 
-
-
-
-
-
-
-
-const AboutPage = ()=>{
-
-
-return(
-<div>
-<Header/>
-<AboutUs/>
-<ContentFooter/>
-<Footer/>
-</div>
-)
-
-
+    return (
+        <div>
+            <Header />
+            <AboutUs />
+            <ContentFooter />
+        </div>
+    )
 }
-
 
 export default AboutPage

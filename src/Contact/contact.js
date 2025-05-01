@@ -1,28 +1,17 @@
 import ContactForm from "../ContactBody/contactbody"
-import Footer from "../Home/Screens/Footer"
 import Header from "../Home/Screens/Header"
 import ContentFooter from "../Services/Screens/ContentFooter"
 
+const Contact = () => {
 
-
-
-
-
-const Contact = ()=>{
-
-
-
-
-
-    return(
+    return (
 
 
         <>
-        <Header/>
-        <ContactForm/>
-        <ContentFooter/>
-        <Footer/>
-        
+            <Header />
+            <ContactForm />
+            <ContentFooter />
+
         </>
     )
 }

@@ -55,12 +55,13 @@
   font-size: clamp(16px, 1.25vw, 20px);
 }
 
-.mapStyles{
+.mapStyles {
   width: 100%;
   height: 250px;
   border: 0;
-   border-radius: 8px
+  border-radius: 8px
 }
+
 .contactItem {
   display: flex;
   align-items: flex-start;
@@ -126,7 +127,8 @@
 .subFooter:hover {
   color: var(--border-color);
 }
-.emailText{
+
+.emailText {
   color: white;
   font-weight: 500;
 }
@@ -191,25 +193,31 @@ Link {
     width: 100%;
     margin: auto;
   }
-  .footerContent{
-    gap:0px;
+
+  .footerContent {
+    gap: 0px;
     padding: 10px 20px 0 20px;
   }
-  .footerSection{
-    height:auto;
+
+  .footerSection {
+    height: auto;
   }
-  .mapWrapper{
+
+  .mapWrapper {
     height: 400px;
   }
-  .mapStyles{
+
+  .mapStyles {
     height: 100%;
   }
 }
+
 @media screen and (min-width:768px) and (max-width:1023px) {
-  .mapWrapper{
+  .mapWrapper {
     height: 300px;
   }
-  .mapStyles{
+
+  .mapStyles {
     height: 100%;
   }
 }
@@ -220,7 +228,6 @@ Link {
   .footerContainer {
     padding: 30px 20px 0;
   }
-
 
   .footerSection {
     width: 200px;
@@ -243,10 +250,6 @@ Link {
     max-width: 160px;
   }
 
-  /* .mapWrapper {
-    height: 170px;
-  } */
-
   .subFooterText {
     font-size: clamp(14px, 1vw, 16px);
   }
@@ -254,10 +257,12 @@ Link {
   .socialLink {
     font-size: clamp(14px, 1vw, 16px);
   }
-  .mapWrapper{
+
+  .mapWrapper {
     height: 250px;
   }
-  .mapStyles{
+
+  .mapStyles {
     height: 100%;
   }
 }
@@ -273,10 +278,12 @@ Link {
   .socialLink {
     font-size: clamp(22px, 1vw, 24px);
   }
-  .mapWrapper{
+
+  .mapWrapper {
     height: 500px;
   }
-  .mapStyles{
+
+  .mapStyles {
     height: 100%;
   }
 }

@@ -209,7 +209,7 @@
   .image {
     width: clamp(175px, 20vw, 180px);
     height: auto;
-    object-fit:cover;
+    object-fit: cover;
   }
 
   .nav {
@@ -323,7 +323,7 @@
   .navList {
     width: 100%;
     display: flex;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
     align-items: center;
     margin: 10px;
     list-style: none;

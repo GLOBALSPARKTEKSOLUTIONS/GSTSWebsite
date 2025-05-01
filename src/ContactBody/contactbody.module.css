@@ -3,12 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 }
- 
+
 .container {
   width: 100%;
   background-color: #fff;
 }
- 
+
 .parallaxSection {
   background-image: url('../Assets/contact6.jpg');
   background-attachment: fixed;
@@ -18,7 +18,7 @@
   width: 100%;
   min-height: 190vh;
 }
- 
+
 .overlay h2 {
   position: absolute;
   top: 35%;
@@ -32,7 +32,7 @@
   color: white;
   margin: 0;
 }
- 
+
 .overlay p {
   font-size: clamp(16px, 0.9vw, 18px);
   color: #1c3681;
@@ -42,19 +42,19 @@
   font-size: 22px;
   color: white;
 }
- 
+
 .overlay p:nth-of-type(1) {
   position: absolute;
   top: 47%;
   left: 10%;
 }
- 
+
 .overlay p:nth-of-type(2) {
   position: absolute;
   top: 54%;
   left: 10%;
 }
- 
+
 .formContainer {
   position: absolute;
   top: 100%;
@@ -67,25 +67,24 @@
   box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.2);
   background-color: whitesmoke;
 }
- 
+
 form {
   display: flex;
   flex-direction: column;
-  /* gap: 10px; */
 }
- 
+
 .fieldContainer {
   width: 50%;
   margin-bottom: 5px;
   display: flex;
   flex-direction: column;
 }
- 
+
 label {
   color: #1c3681;
   font-size: clamp(16px, 0.9vw, 18px);
 }
- 
+
 .fieldContainer input[type="text"] {
   color: red;
   border: 10px solid black;
@@ -94,7 +93,7 @@ label {
   font-size: clamp(14px, 0.9vw, 22px);
   background-color: pink;
 }
- 
+
 textarea {
   background-color: #fff;
   padding: 5px;
@@ -107,20 +106,20 @@ textarea {
   outline: none;
   font-size: clamp(14px, 0.9vw, 22px);
 }
- 
+
 .fieldContainer {
   margin-bottom: 1rem;
   display: flex;
   flex-direction: column;
 }
- 
+
 .fieldContainer label {
   margin-bottom: 0.5rem;
   font-weight: 600;
   color: #1c3681;
   font-size: clamp(16px, 0.9vw, 18px);
 }
- 
+
 .fieldContainer input[type="text"],
 .fieldContainer input[type="email"],
 .fieldContainer input[type="tel"],
@@ -135,19 +134,19 @@ textarea {
   transition: border-color 0.3s, box-shadow 0.3s;
   outline: none;
 }
- 
+
 .fieldContainer input::placeholder,
 .fieldContainer textarea::placeholder {
   color: #999;
 }
- 
+
 .fieldContainer input:focus,
 .fieldContainer textarea:focus,
 .fieldContainer select:focus {
   border-color: #1c3681;
   box-shadow: 0 0 5px rgba(28, 54, 129, 0.3);
 }
- 
+
 .btn {
   background-color: #1c3681;
   color: #fff;
@@ -157,13 +156,12 @@ textarea {
   font-weight: 500;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  /* margin-top: 3px; */
 }
- 
+
 .btn:hover {
   background-color: #142659;
 }
- 
+
 .innerContainer {
   width: 60%;
   height: auto;
@@ -172,7 +170,7 @@ textarea {
   margin-right: auto;
   padding: 10px;
 }
- 
+
 .innerContainer h4 {
   text-align: center;
   margin-top: 10px;
@@ -180,7 +178,7 @@ textarea {
   font-weight: bold;
   margin-bottom: 30px;
 }
- 
+
 .contactContainer {
   width: 60%;
   margin: auto;
@@ -189,68 +187,68 @@ textarea {
   justify-content: space-between;
   align-items: center;
 }
- 
+
 .contact {
   display: flex;
   flex-direction: row;
   padding: 10px;
   gap: 5px;
 }
- 
+
 .contact a {
   text-decoration: none;
 }
- 
+
 .contact a:hover {
   text-decoration: underline;
   text-decoration-color: #1c3681;
 }
- 
+
 .inputContainer {
   display: flex;
   flex-direction: row;
   gap: 10px;
 }
- 
+
 @media screen and (max-width:767px) {
   .parallaxSection {
     min-height: 130vh;
   }
- 
+
   .formContainer {
     width: 80%;
     top: 70%;
     left: 5%;
   }
- 
+
   .overlay h2 {
- 
+
     top: 20%;
     left: 10%;
   }
- 
+
   .overlay p:nth-of-type(1) {
     top: 30%;
     left: 10%;
   }
- 
+
   .overlay p:nth-of-type(2) {
     top: 37%;
     left: 10%;
   }
- 
+
   .formContainer {
     width: 80%;
     top: 60%;
     left: 5%;
   }
 }
- 
+
 @media screen and (min-width:768px) and (max-width:1200px) {
   .parallaxSection {
     min-height: 130vh;
   }
- 
+
   .formContainer {
     width: 80%;
     height: auto;
@@ -258,14 +256,11 @@ textarea {
     left: 5%;
   }
 }
- 
- 
+
+
 .error {
-color: red;
-   font-size: 0.8em;
- margin-top: 0.2em;
+  color: red;
+  font-size: 0.8em;
+  margin-top: 0.2em;
   display: block;
- 
- 
 }
- 

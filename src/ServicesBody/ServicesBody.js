@@ -2,17 +2,7 @@ import styles from './ServicesBody.module.css';
 import ReactJs from '../Assets/ReactJS.png'
 import ReactN from '../Assets/ReactN.png'
 
-
-
-
-
-
-
-
 const ServicesBody = () => {
-
-
-
 
     return (
         <div className={styles.container}>

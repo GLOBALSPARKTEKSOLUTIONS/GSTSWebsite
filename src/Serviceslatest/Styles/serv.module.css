@@ -10,8 +10,6 @@
     margin: auto;
     box-shadow: 3px 2px 5px #cdcdcd;
     border: 0.5px solid #cdcdcd;
-
-
 }
 
 .innerWrapper h3 {
@@ -47,7 +45,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-
 }
 
 .eachService {
@@ -63,9 +60,10 @@
     background-color: rgb(255, 253, 252);
 }
 
-.eachService h6{
+.eachService h6 {
     font-size: clamp(14px, 0.9vw, 22px);
 }
+
 .eachService::before {
     content: '';
     width: 295px;
@@ -89,7 +87,7 @@
     position: absolute;
     right: -1%;
     bottom: -1%;
-    border-radius:23px;
+    border-radius: 23px;
     z-index: -100;
     background-color: #1c3681;
 
@@ -165,7 +163,7 @@
 
 @media screen and (min-width:768px) and (max-width:1439px) {
 
-    
+
 
     .eachService {
         width: 22%;
@@ -190,4 +188,3 @@
     }
 
 }
-

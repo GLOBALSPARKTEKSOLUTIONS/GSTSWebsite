@@ -2,21 +2,15 @@ import Header from "../Home/Screens/Header"
 import ContentFooter from "../Services/Screens/ContentFooter"
 import Privacy from "./privacy"
 
+const PrivacyHome = () => {
 
+    return (
 
-
-
-
-const PrivacyHome = ()=>{
-
-
-    return(
-
-<>
-<Header/>
-<Privacy/>
-<ContentFooter/>
-</>
+        <>
+            <Header />
+            <Privacy />
+            <ContentFooter />
+        </>
 
     )
 }

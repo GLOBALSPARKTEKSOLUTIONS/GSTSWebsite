@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useSearchParams } from "react-router-dom";
-import styles from "../Styles/services.module.css";
-import Footer from "../../Home/Screens/Footer";
+import styles from "../Styles/technology.module.css";
 import Header from "../../Home/Screens/Header";
-import ContentFooter from "../../Services/Screens/ContentFooter";
+import ContentFooter from "./ContentFooter";
 
-const Services = () => {
+const Technology = () => {
   const [searchParams] = useSearchParams();
   const serviceId = searchParams.get("service");
   const [isMobile, setIsMobile] = useState(false);
@@ -165,7 +164,7 @@ const Services = () => {
     },
   ];
 
-  
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
@@ -213,7 +212,6 @@ const Services = () => {
     };
   }, [isMobile]);
 
-  // Handle navigation click
   const handleNavClick = (id) => {
     if (isMobile) {
       const element = document.getElementById(id);
@@ -223,7 +221,6 @@ const Services = () => {
           inline: "center",
           block: "start",
         });
-        // Adjust scroll to account for sidebar height
         const sidebar = document.querySelector(`.${styles.sidebar}`);
         if (sidebar) {
           const sidebarHeight = sidebar.offsetHeight;
@@ -235,7 +232,7 @@ const Services = () => {
     }
   };
 
- 
+
   const sortedServices = [...servicesData].sort((a, b) =>
     a.name.localeCompare(b.name)
   );
@@ -251,9 +248,8 @@ const Services = () => {
               <button
                 key={service.id}
                 data-service-id={service.id}
-                className={`${styles.navItem} ${
-                  selectedService === service.id ? styles.active : ""
-                }`}
+                className={`${styles.navItem} ${selectedService === service.id ? styles.active : ""
+                  }`}
                 onClick={() => handleNavClick(service.id)}
               >
                 <span className={styles.navText}>{service.name}</span>
@@ -310,9 +306,8 @@ const Services = () => {
         </div>
       </div>
       <ContentFooter />
-      <Footer />
     </>
   );
 };
 
-export default Services;
+export default Technology;

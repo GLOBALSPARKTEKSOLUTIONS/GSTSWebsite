@@ -17,7 +17,7 @@ const JobCard = ({ title, location, type, role, description, responsibilities, r
           <p className={styles.jobLocation}>
             <span className={styles.icon}>🌍</span> {location} | {type}
           </p>
-          
+
           <p className={styles.jobDescription}>{description}</p>
 
           <div className={styles.jobSection}>
@@ -70,19 +70,19 @@ const CareerBody = () => {
             location="Hyderabad, India"
             type="Full-time"
             responsibilities={[
-             "Extensive experience in Oracle ERP/Fusion SaaS/PaaS project implementations as a technical developer",
-"Completed at least 2 full Oracle Cloud (Fusion) Implementation",
-"Extensive Knowledge on database structure for ERP/Oracle Cloud (Fusion)",
-"Extensively worked on BI Publisher reports, FBDI/OTBI/VBCS and Oracle Integration Cloud (OIC)",
-"Strong technical knowledge on Oracle Database SQL and PLSQL",
-"Providing technical support and troubleshooting for Oracle Fusion applications",
-"Collaborating with functional consultants to ensure that technical solutions meet business requirements",
-"Developing and executing test plans to ensure the quality of technical solutions",
-"Providing technical leadership and mentoring to junior team members",
-"Participating in the full software development life cycle (SDLC), including requirements gathering, design, development, testing, and deployment",
-"Staying up to date with emerging Oracle technologies and best practices and providing recommendations to clients for new technology solutions",
-"Providing input into project plans, timelines, and budgets",
-"Communicating effectively with clients, project managers, and other team members to ensure that technical solutions are delivered on-time and within budget"
+              "Extensive experience in Oracle ERP/Fusion SaaS/PaaS project implementations as a technical developer",
+              "Completed at least 2 full Oracle Cloud (Fusion) Implementation",
+              "Extensive Knowledge on database structure for ERP/Oracle Cloud (Fusion)",
+              "Extensively worked on BI Publisher reports, FBDI/OTBI/VBCS and Oracle Integration Cloud (OIC)",
+              "Strong technical knowledge on Oracle Database SQL and PLSQL",
+              "Providing technical support and troubleshooting for Oracle Fusion applications",
+              "Collaborating with functional consultants to ensure that technical solutions meet business requirements",
+              "Developing and executing test plans to ensure the quality of technical solutions",
+              "Providing technical leadership and mentoring to junior team members",
+              "Participating in the full software development life cycle (SDLC), including requirements gathering, design, development, testing, and deployment",
+              "Staying up to date with emerging Oracle technologies and best practices and providing recommendations to clients for new technology solutions",
+              "Providing input into project plans, timelines, and budgets",
+              "Communicating effectively with clients, project managers, and other team members to ensure that technical solutions are delivered on-time and within budget"
 
             ]}
             requirements={[
@@ -92,7 +92,7 @@ const CareerBody = () => {
               "Strong functional understanding of Supply Chain Management (SCM) and Finance modules.",
               "4 to 10 years of relevant industry experience in Oracle technologies."
             ]}
-            
+
             email="careers@globalsparktek.com"
           />
 
@@ -108,7 +108,7 @@ const CareerBody = () => {
               "Collaborating with Oracle Support to troubleshoot and resolve open issues",
               "Executing data conversions and developing Infolets for dynamic data visualization",
               "Creating and managing scheduled jobs within the Oracle Fusion environment",
-          
+
             ]
             }
             requirements={[
@@ -119,8 +119,8 @@ const CareerBody = () => {
               "Bachelor’s or Master’s degree (B.E./B.Tech/M.Tech) in Computer Science or Information Technology, or MCA",
               "4 to 10 years of hands-on experience in Oracle Fusion application development and support"
             ]
-            
-}
+
+            }
             email="careers@globalsparktek.com"
           />
         </div>

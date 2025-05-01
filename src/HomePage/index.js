@@ -6,15 +6,7 @@ import CarouselServices from "../Services/Screens/CarouselServices"
 import ContentFooter from "../Services/Screens/ContentFooter"
 import ServicesHome from "../Serviceslatest/Screens/ServicesHome"
 
-
-
-
-
-
-
 const HomePage = () => {
-
-
     return (
         <>
             <Header />
@@ -27,6 +19,4 @@ const HomePage = () => {
         </>
     )
 }
-
-
 export default HomePage

@@ -1,8 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
 import '../Styles/client.css'
-
-
 import afmc from '../../Assets/afmc.png';
 import vigilant from '../../Assets/vigilant.jfif';
 import osi from '../../Assets//osi.jpg';
@@ -21,7 +19,7 @@ const Clients = () => {
         { id: 5, name: 'Vigilant', image: vigilant, description: 'Top consulting firm.' },
         { id: 6, name: 'Alloys', image: alloys, description: 'Education and publishing giant.' },
         { id: 7, name: 'OSI', image: osi, description: 'Food solutions specialist.' },
-        
+
     ];
 
 

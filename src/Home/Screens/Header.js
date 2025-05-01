@@ -63,7 +63,7 @@ const Header = () => {
     { name: 'home', path: '/', icon: <MdHome size={24} />, label: 'Home' },
     { name: 'about', path: '/about', icon: <IoIosInformationCircleOutline size={24} />, label: 'About Us' },
     { name: 'services', path: '/servicepagen', icon: <BsGear size={24} />, label: 'Services' },
-    { name: 'technology', path: '/servicepage', icon: <FaLaptopCode size={24} />, label: 'Technology' },
+    { name: 'technology', path: '/technologies', icon: <FaLaptopCode size={24} />, label: 'Technology' },
     { name: 'careers', path: '/careers', icon: <IoBookOutline size={24} />, label: 'Careers' },
   ];
 

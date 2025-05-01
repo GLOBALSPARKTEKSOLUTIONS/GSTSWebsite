@@ -4,11 +4,11 @@ import AboutPage from "../AboutPage";
 import Careers from "../Careers/careers";
 import Contact from "../Contact/contact";
 import ServicesModule from "../ServicesModule/services";
-import Services from "../Services/Screens/Services";
 import ServicesPageN from "../Serviceslatest/Screens/ServicesPageN";
 import ScrollToTop from "../ScrollToTop";
 import PrivacyHome from "../PrivacyPolicy/PrivacyHome";
 import ErrorHome from "../ErrorPage/errorHome";
+import Technology from "../Services/Screens/Technology";
 
 const Navigate = () => {
   return (
@@ -20,8 +20,8 @@ const Navigate = () => {
         <Route path="/careers" element={<Careers />} />
         <Route path="/services" element={<ServicesModule />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/servicepage:serviceId" element={<Services />} />
-        <Route path="/servicepage" element={<Services />} />
+        <Route path="/servicepage:serviceId" element={<Technology />} />
+        <Route path="/technologies" element={<Technology />} />
         <Route path="/servicepagen" element={<ServicesPageN />} />
         <Route path="/privacy" element={<PrivacyHome />} />
         <Route path="*" element={<ErrorHome />} />

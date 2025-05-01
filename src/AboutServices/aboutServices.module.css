@@ -65,13 +65,15 @@ h6 {
 
 
 }
-.firstRow h5{
+
+.firstRow h5 {
   color: #1c3681;
 }
-.firstRow h6{
+
+.firstRow h6 {
   font-size: clamp(14px, 0.9vw, 22px);
-    line-height: 1.7;
-    color: #555555; 
+  line-height: 1.7;
+  color: #555555;
 }
 
 #eachService2 .firstRow {
@@ -81,6 +83,7 @@ h6 {
 .vContainer {
   padding: 40px 20px;
 }
+
 .topBox {
   width: 75%;
   margin: auto;
@@ -129,8 +132,6 @@ h6 {
   justify-content: center;
   align-items: center;
   color: white;
-
-
 }
 
 .topBoxRight::after {
@@ -149,7 +150,6 @@ h6 {
   justify-content: center;
   align-items: center;
   color: white;
-
 }
 
 .topBox span::after {
@@ -165,7 +165,6 @@ h6 {
   border-radius: 50%;
 }
 
-
 .bottomBox {
   height: 170px;
   display: flex;
@@ -175,8 +174,6 @@ h6 {
   margin: auto;
 
 }
-
-
 
 .bottomBoxLeft::before {
   content: '3';
@@ -194,8 +191,6 @@ h6 {
   justify-content: center;
   align-items: center;
   color: white;
-
-
 }
 
 .bottomBoxRight::after {
@@ -214,9 +209,7 @@ h6 {
   justify-content: center;
   align-items: center;
   color: white;
-
 }
-
 
 .bottomBox span::before {
   content: '5';
@@ -234,7 +227,6 @@ h6 {
   justify-content: center;
   align-items: center;
   color: white;
-
 }
 
 .bottomBox span::after {
@@ -328,7 +320,7 @@ h6 {
 #eachService2 .firstRow {
   animation: slideFadeIn 1s ease-out;
   animation-delay: 0.5s;
- 
+
 }
 
 .topBox,
@@ -342,12 +334,12 @@ h6 {
     flex-direction: column;
     padding: 20px 0;
   }
- 
+
   #innerWrapper {
     flex-direction: column;
     gap: 30px;
   }
- 
+
   #eachService,
   #eachService1,
   #eachService2 {
@@ -355,41 +347,43 @@ h6 {
     padding: 0 15px;
     gap: 30px;
   }
- 
+
   .vContainer {
     display: none;
   }
- 
+
   #eachService .firstRow,
   #eachService2 .rightRow {
     text-align: center;
     margin: 15px 0;
   }
- 
+
   #eachService h5,
   #eachService2 h5 {
-    /* font-size: 18px; */
     margin-bottom: 10px;
   }
- .rightRow h5{
-  text-align: center !important;
 
+  .rightRow h5 {
+    text-align: center !important;
+  }
 
- }
   .expandClass {
     visibility: visible;
-    /* font-size: 14px; */
     line-height: 1.4;
     margin-top: 8px;
   }
 }
- 
+
 @media screen and (min-width:1024px) and (max-width:1440px) {
-  .topBox span::after,.bottomBox #spans::after{
+
+  .topBox span::after,
+  .bottomBox #spans::after {
     right: 44%;
   }
 }
+
 @media screen and (min-width:375px) and (max-width:424px) {
+
   #eachService,
   #eachService2 {
     gap: 20px;

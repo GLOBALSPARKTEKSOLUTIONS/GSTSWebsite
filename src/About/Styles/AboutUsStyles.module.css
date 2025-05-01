@@ -1,5 +1,5 @@
 .aboutSection {
-  background-color: #FFFFFF; 
+  background-color: #FFFFFF;
   padding: 80px 20px;
   min-height: 100vh;
   overflow: hidden;
@@ -8,8 +8,8 @@
 .hero {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #1C3681 0%, #39A7FF 50%, #1C3681 100%); 
-  color: #FFFFFF; 
+  background: linear-gradient(135deg, #1C3681 0%, #39A7FF 50%, #1C3681 100%);
+  color: #FFFFFF;
   border-radius: 16px;
   margin-bottom: 60px;
   position: relative;
@@ -53,7 +53,7 @@
 }
 
 .introCard {
-  background: #FFFFFF; 
+  background: #FFFFFF;
   padding: 40px;
   border-radius: 16px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -63,10 +63,9 @@
 }
 
 .sectionTitle {
-  /* font-size: 2.5rem; */
   font-size: clamp(24px, 1.5vw, 48px);
   font-weight: 800;
-  color:#1c3681;
+  color: #1c3681;
   margin-bottom: 20px;
 }
 
@@ -79,10 +78,9 @@
 }
 
 .sectionText {
-  /* font-size: 1.2rem; */
   font-size: clamp(16px, 0.9vw, 18px);
   line-height: 1.8;
-  color: #555555; 
+  color: #555555;
 }
 
 .featuresGrid {
@@ -93,7 +91,7 @@
 }
 
 .featureItem {
-  background: #FFFFFF; 
+  background: #FFFFFF;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -109,19 +107,16 @@
 
 .featureIcon {
   font-size: 2.5rem;
-  color: #39A7FF; 
-  color: #1C3681; 
-  color:#2548AB;
+  color: #39A7FF;
+  color: #1C3681;
+  color: #2548AB;
   margin-bottom: 15px;
 }
 
 .featureTitle {
-  /* font-size: 1.7rem; */
   font-size: clamp(16px, 0.9vw, 18px);
   font-weight: 700;
-  /* color: #39A7FF; */
-  color: #1C3681; 
-  /* color:#2548AB; */
+  color: #1C3681;
   margin-bottom: 15px;
 }
 
@@ -134,9 +129,9 @@
 .callout {
   text-align: center;
   padding: 25px;
-  background: #1C3681; 
-  background:#2548AB;
-  color: #FFFFFF; 
+  background: #1C3681;
+  background: #2548AB;
+  color: #FFFFFF;
   border-radius: 12px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -156,6 +151,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -166,6 +162,7 @@
     transform: translateY(50px);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
@@ -177,6 +174,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -189,13 +187,13 @@
     padding: 40px 15px;
   }
 
- 
+
 
   .introCard {
     padding: 25px;
   }
 
-  
+
   .featuresGrid {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -205,5 +203,5 @@
     padding: 20px;
   }
 
-  
+
 }

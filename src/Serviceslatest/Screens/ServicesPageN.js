@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import classNames from 'classnames';
-import Footer from '../../Home/Screens/Footer';
 import Header from '../../Home/Screens/Header';
 import ContentFooter from '../../Services/Screens/ContentFooter';
 import { motion } from 'framer-motion';
@@ -412,7 +411,6 @@ const ServicesPageN = () => {
         </div>
       </motion.div>
       <ContentFooter />
-      <Footer />
     </>
   );
 };

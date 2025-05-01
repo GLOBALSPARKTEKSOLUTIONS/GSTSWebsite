@@ -1,14 +1,6 @@
 import styles from './privacy.module.css';
 
-
-
-
 const Privacy = () => {
-
-
-
-
-
 
     return (
         <div id={styles.mainContainer}>

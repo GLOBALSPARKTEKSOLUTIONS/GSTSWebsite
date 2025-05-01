@@ -5,7 +5,7 @@
     overflow: hidden;
     position: relative;
 }
- 
+
 .sidebar {
     width: 300px;
     background: #ffffff;
@@ -15,17 +15,17 @@
     z-index: 1;
     animation: slideInLeft 0.5s ease-out;
 }
- 
+
 @keyframes slideInLeft {
     from {
         transform: translateX(-100%);
     }
- 
+
     to {
         transform: translateX(0);
     }
 }
- 
+
 .sidebarTitle {
     font-size: clamp(24px, 1.5vw, 48px);
     font-weight: bold;
@@ -36,7 +36,7 @@
     text-transform: uppercase;
     letter-spacing: 1px;
 }
- 
+
 .sidebarTitle::after {
     content: '';
     position: absolute;
@@ -47,17 +47,17 @@
     background: #1C3681;
     transition: width 0.3s ease;
 }
- 
+
 .sidebar:hover .sidebarTitle::after {
     width: 100px;
 }
- 
+
 .nav {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
- 
+
 .navItem {
     display: flex;
     align-items: center;
@@ -75,7 +75,7 @@
     position: relative;
     overflow: hidden;
 }
- 
+
 .navItem::before {
     content: '';
     position: absolute;
@@ -87,26 +87,26 @@
     transition: left 0.3s ease;
     z-index: -1;
 }
- 
+
 .navItem:hover::before {
     left: 0;
 }
- 
+
 .navItem:hover {
     transform: translateX(10px);
 }
- 
+
 .active {
     background: #1C3681;
     color: #ffffff;
     box-shadow: 0 4px 15px rgba(28, 54, 129, 0.3);
 }
- 
+
 .navText {
     margin-left: 12px;
     font-size: clamp(16px, 0.9vw, 18px);
 }
- 
+
 .contentArea {
     flex: 1;
     padding: 20px 40px;
@@ -117,15 +117,15 @@
     backdrop-filter: blur(8px);
     position: relative;
     z-index: 1;
- 
+
 }
- 
+
 .contentWrapper {
     max-width: 900px;
     width: 100%;
     margin-top: 20px;
 }
- 
+
 .contentCard {
     background: #ffffff;
     padding: 30px 5px;
@@ -135,9 +135,9 @@
     position: relative;
     overflow: hidden;
     border: 1px solid #1C3681;
- 
+
 }
- 
+
 .contentCard::after {
     content: '';
     position: absolute;
@@ -149,56 +149,55 @@
     animation: rotateGlow 10s infinite linear;
     z-index: -1;
 }
- 
+
 @keyframes zoomIn {
     from {
         opacity: 0;
         transform: scale(0.8);
     }
- 
+
     to {
         opacity: 1;
         transform: scale(1);
     }
 }
- 
+
 @keyframes rotateGlow {
     0% {
         transform: rotate(0deg);
     }
- 
+
     100% {
         transform: rotate(360deg);
     }
 }
- 
+
 .contentWithImage {
     display: flex;
     gap: 30px;
     align-items: flex-start;
     flex-wrap: wrap;
-    /* border: 4px solid pink; */
 }
- 
+
 .imageContainer {
     width: 250px;
     padding: 20px;
     height: 300px;
 }
- 
+
 .serviceImage {
     width: 100%;
-    height:auto;
+    height: auto;
     object-fit: contain;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(28, 54, 129, 0.2);
 }
- 
+
 .contentCardInner {
     flex: 1;
     min-width: 0;
 }
- 
+
 .title {
     color: #1C3681;
     margin-bottom: 15px;
@@ -206,21 +205,21 @@
     position: relative;
     animation: fadeInDown 0.5s ease-in-out;
     font-size: clamp(24px, 1.5vw, 48px);
- 
+
 }
- 
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
         transform: translateY(-20px);
     }
- 
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
- 
+
 .subtitle {
     color: #1C3681;
     font-size: clamp(16px, 0.9vw, 18px);
@@ -228,7 +227,7 @@
     font-style: italic;
     animation: fadeIn 0.7s ease-in-out;
 }
- 
+
 .contentCard p {
     color: #333;
     font-size: 16px;
@@ -236,13 +235,13 @@
     line-height: 1.8;
     animation: fadeIn 0.9s ease-in-out;
 }
- 
+
 .featureList {
     list-style-type: none;
     margin-left: 0;
     margin-bottom: 30px;
 }
- 
+
 .featureList li {
     position: relative;
     padding-left: 30px;
@@ -252,39 +251,39 @@
     animation: slideInRight 0.5s ease-in-out;
     animation-fill-mode: both;
 }
- 
+
 .featureList li:nth-child(1) {
     animation-delay: 0.1s;
 }
- 
+
 .featureList li:nth-child(2) {
     animation-delay: 0.2s;
 }
- 
+
 .featureList li:nth-child(3) {
     animation-delay: 0.3s;
 }
- 
+
 .featureList li:nth-child(4) {
     animation-delay: 0.4s;
 }
- 
+
 .featureList li:nth-child(5) {
     animation-delay: 0.5s;
 }
- 
+
 @keyframes slideInRight {
     from {
         opacity: 0;
         transform: translateX(20px);
     }
- 
+
     to {
         opacity: 1;
         transform: translateX(0);
     }
 }
- 
+
 .featureList li::before {
     content: '★';
     position: absolute;
@@ -293,28 +292,28 @@
     font-size: clamp(16px, 0.9vw, 18px);
     animation: pulse 1.5s infinite;
 }
- 
+
 @keyframes pulse {
     0% {
         transform: scale(1);
     }
- 
+
     50% {
         transform: scale(1.2);
     }
- 
+
     100% {
         transform: scale(1);
     }
 }
- 
+
 .interactiveSection {
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
     align-items: center;
 }
- 
+
 .actionBtn {
     padding: 14px 30px;
     background: #1C3681;
@@ -328,7 +327,7 @@
     position: relative;
     overflow: hidden;
 }
- 
+
 .actionBtn::after {
     content: '';
     position: absolute;
@@ -341,18 +340,18 @@
     transform: translate(-50%, -50%);
     transition: width 0.4s ease, height 0.4s ease;
 }
- 
+
 .actionBtn:hover::after {
     width: 200px;
     height: 200px;
 }
- 
+
 .actionBtn:hover {
     background: #2a4b9b;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(28, 54, 129, 0.4);
 }
- 
+
 .secondaryBtn {
     padding: 14px 30px;
     background: transparent;
@@ -364,14 +363,14 @@
     font-weight: 600;
     transition: all 0.3s ease;
 }
- 
+
 .secondaryBtn:hover {
     background: #1C3681;
     color: #ffffff;
     transform: translateY(-3px);
     box-shadow: 0 8px 20px rgba(28, 54, 129, 0.4);
 }
- 
+
 .stats {
     display: flex;
     gap: 15px;
@@ -379,30 +378,30 @@
     font-size: 14px;
     color: #1C3681;
 }
- 
+
 .stats span {
     background: rgba(28, 54, 129, 0.1);
     padding: 8px 15px;
     border-radius: 20px;
     animation: fadeInUp 0.5s ease-in-out;
 }
- 
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
         transform: translateY(20px);
     }
- 
+
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
- 
+
 .demoPreview {
     margin-top: 15px;
 }
- 
+
 .previewText {
     color: #1C3681;
     font-size: clamp(14px, 0.9vw, 22px);
@@ -411,9 +410,9 @@
     border-radius: 20px;
     animation: bounce 2s infinite;
 }
- 
+
 @keyframes bounce {
- 
+
     0%,
     20%,
     50%,
@@ -421,292 +420,260 @@
     100% {
         transform: translateY(0);
     }
- 
+
     40% {
         transform: translateY(-10px);
     }
- 
+
     60% {
         transform: translateY(-5px);
     }
 }
- 
- 
-@media (max-width: 600px) {
+
+
+@media (max-width: 599px) {
     .servicesContainer {
         flex-direction: column;
         overflow: visible;
-   
-    }
- 
-    .sidebar {
-        width: 100%;
-        padding: 10px 0;
-        background: #ffffff;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        overflow-x: hidden;
- 
-    }
- 
-    .sidebarTitle {
-        padding-left: 20px;
-        margin-bottom: 15px;
-    }
- 
-    .nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 8px;
-        padding: 15px 20px;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
- 
-    .nav::-webkit-scrollbar {
-        display: none;
-    }
- 
-    .navItem {
-        width: auto;
-        flex-shrink: 0;
-        padding: 8px 16px;
-     
-        border-radius: 20px;
-        transform: none !important;
-        background: rgba(28, 54, 129, 0.1);
-        transition: all 0.3s ease;
-       
-    }
- 
-  .navItem.active {
-      background:#1C3681;
-   
-      color: #ffffff;
-      box-shadow: 0 4px 10px rgba(28, 54, 129, 0.3);
-  }
-    .navItem::before {
-        display: none;
-    }
- 
-    .contentArea {
-        padding: 20px;
-        backdrop-filter: none;
-        overflow: hidden;
-       
-    }
- 
-    .contentWrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        gap: 20px;
-        padding-bottom: 20px;
-        background-color: red;
-    }
- 
-    .contentWrapper::-webkit-scrollbar {
-        display: none;
-    }
- 
-    .contentCard {
-        flex: 0 0 90%; 
-     max-width: 80%;
-        padding: 20px;
-        scroll-snap-align: center;
-        margin: 0 10px;
-        animation: none;
-    }
- 
-    .contentWithImage {
-        flex-direction: column;
-        gap: 20px;
-        width: 60%;
-    }
- 
-    .imageContainer {
-        width: 250px;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-   
-    .serviceImage {
-        width: 100%;
-        height:auto;
-        margin: auto;
-        object-fit: contain;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(28, 54, 129, 0.2);
-    }
-    .contentCardInner {
-        flex: 1;
-        margin-top:40px ;
-    }
-    .featureList{
-        padding: 0;
-    }
- 
-}
-  
-@media (min-width: 600px)  and (max-width:800px){
-    .servicesContainer {
-        flex-direction: column;
-        overflow: visible;
-   
-    }
- 
-    .sidebar {
-        width: 100%;
-        padding: 10px 0;
-        background: #ffffff;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
-        overflow-x: hidden;
- 
-    }
- 
-    .sidebarTitle {
-        padding-left: 20px;
-        margin-bottom: 15px;
-    }
- 
-    .nav {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        gap: 8px;
-        padding: 15px 20px;
-        overflow-x: auto;
-        white-space: nowrap;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-    }
- 
-    .nav::-webkit-scrollbar {
-        display: none;
-    }
- 
-    .navItem {
-        width: auto;
-        flex-shrink: 0;
-        padding: 8px 16px;
-     
-        border-radius: 20px;
-        transform: none !important;
-        background: rgba(28, 54, 129, 0.1);
-        transition: all 0.3s ease;
-       
-    }
- 
-  .navItem.active {
-      background:#1C3681;
-   
-      color: #ffffff;
-      box-shadow: 0 4px 10px rgba(28, 54, 129, 0.3);
-  }
-    .navItem::before {
-        display: none;
-    }
- 
-    .contentArea {
-        padding: 20px;
-        backdrop-filter: none;
-        overflow: hidden;
-       
-    }
- 
-    .contentWrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        -webkit-overflow-scrolling: touch;
-        scrollbar-width: none;
-        gap: 20px;
-        padding-bottom: 20px;
-        background-color: red;
-    }
- 
-    .contentWrapper::-webkit-scrollbar {
-        display: none;
-    }
- 
-    .contentCard {
-        flex: 0 0 50%; 
-     max-width: 80%;
-        padding: 20px;
-        scroll-snap-align: center;
-        margin: 0 10px;
-        animation: none;
-    }
- 
-    .contentWithImage {
-        flex-direction: column;
-        gap: 20px;
-        width: 60%;
-    }
- 
-    .imageContainer {
-        width: 250px;
-        height: 200px;
-        margin-left: auto;
-        margin-right: auto;
-    }
-   
-    .serviceImage {
-        width: 100%;
-        height:auto;
-        margin: auto;
-        object-fit: contain;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(28, 54, 129, 0.2);
-    }
-    .contentCardInner {
-        flex: 1;
-        margin-top:40px ;
-    }
-    .featureList{
-        padding: 0;
-    }
- 
-}
- 
-/* @media (min-width: 769px) {
-    .servicesContainer {
-        flex-direction: row;
-    }
- 
-    .sidebar {
-        width: 280px;
-        height: 100vh;
-        position: sticky;
-        top: 0;
-        overflow-y: auto;
-    }
- 
-    .nav {
-        flex-direction: column;
-        overflow-x: visible;
-    }
- 
-    .contentWrapper {
-        display: block;
-    }
- 
-    .contentCard {
-        width: 100%;
-        max-width: 100%;
+
     }
 
-} */
+    .sidebar {
+        width: 100%;
+        padding: 10px 0;
+        background: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        overflow-x: hidden;
+
+    }
+
+    .sidebarTitle {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 15px 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navItem {
+        width: auto;
+        flex-shrink: 0;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transform: none !important;
+        background: rgba(28, 54, 129, 0.1);
+        transition: all 0.3s ease;
+
+    }
+
+    .navItem.active {
+        background: #1C3681;
+        color: #ffffff;
+        box-shadow: 0 4px 10px rgba(28, 54, 129, 0.3);
+    }
+
+    .navItem::before {
+        display: none;
+    }
+
+    .contentArea {
+        padding: 20px;
+        backdrop-filter: none;
+        overflow: hidden;
+    }
+
+    .contentWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .contentWrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .contentCard {
+        flex: 0 0 90%;
+        max-width: 80%;
+        padding: 20px;
+        scroll-snap-align: center;
+        margin: 0 10px;
+        animation: none;
+    }
+
+    .contentWithImage {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        border: 4px dotted #000;
+    }
+
+    .imageContainer {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        border: 3px solid #000;
+    }
+
+    .serviceImage {
+        width: 100%;
+        height: auto;
+        margin: auto;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(28, 54, 129, 0.2);
+    }
+
+    .contentCardInner {
+        flex: 1;
+        border: 1px solid #000;
+    }
+
+    .featureList {
+        padding: 0;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width:800px) {
+    .servicesContainer {
+        flex-direction: column;
+        overflow: visible;
+
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 10px 0;
+        background: #ffffff;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        overflow-x: hidden;
+
+    }
+
+    .sidebarTitle {
+        padding-left: 20px;
+        margin-bottom: 15px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 8px;
+        padding: 15px 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    .navItem {
+        width: auto;
+        flex-shrink: 0;
+        padding: 8px 16px;
+        border-radius: 20px;
+        transform: none !important;
+        background: rgba(28, 54, 129, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .navItem.active {
+        background: #1C3681;
+        color: #ffffff;
+        box-shadow: 0 4px 10px rgba(28, 54, 129, 0.3);
+    }
+
+    .navItem::before {
+        display: none;
+    }
+
+    .contentArea {
+        padding: 20px;
+        backdrop-filter: none;
+        overflow: hidden;
+    }
+
+    .contentWrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: none;
+        gap: 20px;
+        padding-bottom: 20px;
+
+    }
+
+    .contentWrapper::-webkit-scrollbar {
+        display: none;
+    }
+
+    .contentCard {
+        flex: 0 0 50%;
+        max-width: 80%;
+        scroll-snap-align: center;
+        animation: none;
+    }
+
+    .contentWithImage {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .imageContainer {
+        width: 200px;
+        height: 200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .serviceImage {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 15px rgba(28, 54, 129, 0.2);
+    }
+
+    .contentCardInner {
+        flex: 1;
+    }
+
+    .featureList {
+        padding: 0;
+    }
+
+}

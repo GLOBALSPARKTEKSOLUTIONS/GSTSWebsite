@@ -26,59 +26,55 @@ const ContentFooter = () => {
           <h2 className={styles.sectionTitle}>Services</h2>
 
           <ul className={styles.footerList}>
-            <Link to="/servicepagen?tab=Application%20Integration%20Services&subtab=Our%20Approach">
+            <Link to="/servicepage?tab=Application%20Integration%20Services&subtab=Our%20Approach">
               <li className={styles.footerItems}>Application Integration Services</li>
             </Link>
-            <Link to="/servicepagen?tab=Cloud%20Consulting%20%26%20Advisory&subtab=Our%20Approach">
+            <Link to="/servicepage?tab=Cloud%20Consulting%20%26%20Advisory&subtab=Our%20Approach">
               <li className={styles.footerItems}>Cloud Consulting & Advisory</li>
             </Link>
-            <Link to="/servicepagen?tab=ERP%20Implementations&subtab=Our%20Approach">
+            <Link to="/servicepage?tab=ERP%20Implementations&subtab=Our%20Approach">
               <li className={styles.footerItems}>ERP Implementations</li>
             </Link>
-            <Link to="/servicepagen?tab=Exhaustive%20Testing%20Services&subtab=Our%20Approach">
+            <Link to="/servicepage?tab=Exhaustive%20Testing%20Services&subtab=Our%20Approach">
               <li className={styles.footerItems}>Exhaustive Testing Services</li>
             </Link>
-            <Link to="/servicepagen?tab=Managed%20Services&subtab=Our%20Approach">
+            <Link to="/servicepage?tab=Managed%20Services&subtab=Our%20Approach">
               <li className={styles.footerItems}>Managed Services</li>
             </Link>
-            <Link to="/servicepagen?tab=Web%20Development&subtab=Our%20Approach">
+            <Link to="/servicepage?tab=Web%20Development&subtab=Our%20Approach">
               <li className={styles.footerItems}>Web Development</li>
             </Link>
           </ul>
 
         </div>
+       
         <div className={styles.footerSection}>
-          <h2 className={styles.sectionTitle}>Technologies</h2>
-          <ul className={styles.footerList}>
-            <Link to='/servicepage?service=apex'>
-              <li>Oracle APEX (Application Express)</li>
+  <h2 className={styles.sectionTitle}>Technologies</h2>
+  <ul className={styles.footerList}>
+    <Link to='/technologies?service=apex'>
+      <li>Oracle APEX (Application Express)</li>
+    </Link>
+    <Link to='/technologies?service=oracle-cloud'>
+      <li>Oracle Cloud</li>
+    </Link>
+    <Link to='/technologies?service=ebs'>
+      <li>Oracle E-Business Suite (EBS)</li>
+    </Link>
+    <Link to='/technologies?service=oracle-integration-cloud'>
+      <li>Oracle Integration Cloud (OIC)</li>
+    </Link>
+    <Link to='/technologies?service=vbcs'>
+      <li>Oracle Visual Builder Cloud Service (VBCS)</li>
+    </Link>
+    <Link to="/technologies?service=react">
+      <li>React JS</li>
+    </Link>
+    <Link to="/technologies?service=react-native">
+      <li>React Native</li>
+    </Link>
+  </ul>
+</div>
 
-            </Link>
-            <Link to='/servicepage?service=oracle-cloud'>
-              <li>Oracle Cloud</li>
-
-            </Link>
-            <Link to='/servicepage?service=ebs'>
-              <li>Oracle E-Business Suite (EBS)</li>
-
-            </Link>
-            <Link to='/servicepage?service=oracle-cloudoracle-integration-cloud'>
-              <li>Oracle Integration Cloud (OIC)</li>
-
-            </Link>
-            <Link to='/servicepage?service=vbcs'>
-              <li>Oracle Visual Builder Cloud Service (VBCS)</li>
-            </Link>
-
-
-            <Link to="/servicepage?service=react">
-              <li>React JS</li>
-            </Link>
-            <Link to="/servicepage?service=react-native">
-              <li>React Native</li>
-            </Link>
-          </ul>
-        </div>
 
         <div className={styles.footerSection}>
           <h2 className={styles.sectionTitle}>Get in Touch</h2>
@@ -126,7 +122,7 @@ const ContentFooter = () => {
       <div className={styles.subContainer}>
         <div className={styles.footerContent}>
           <p className={styles.subFooterText}>
-            Copyright ©2025
+          Copyright ©{new Date().getFullYear()}
             <span className={styles.subFooter}> Global Spark Tek Solutions </span>
             <span className={styles.subFooterText}> - All Rights Reserved | </span>
             <Link to='/privacy' className={styles.subFooter}> Privacy Policy </Link>

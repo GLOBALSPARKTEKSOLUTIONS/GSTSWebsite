@@ -18,7 +18,7 @@ const CarouselServices = () => {
     const totalSlides = Math.ceil(images.length / 6);
 
     const handleLearnMore = (serviceId) => {
-        navigate(`/servicepage?service=${serviceId}`);
+        navigate(`/technologies?service=${serviceId}`);
         console.log("serv", serviceId);
     };
 

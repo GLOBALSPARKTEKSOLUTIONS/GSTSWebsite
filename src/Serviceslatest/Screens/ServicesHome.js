@@ -20,7 +20,7 @@ const ServicesHome = () => {
   ];
 
   const handleCardClick = (serviceName) => {
-    navigate(`/servicepagen?tab=${encodeURIComponent(serviceName)}`);
+    navigate(`/servicepage?tab=${encodeURIComponent(serviceName)}`);
   };
 
   return (

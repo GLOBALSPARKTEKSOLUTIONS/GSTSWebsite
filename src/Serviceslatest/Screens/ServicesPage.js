@@ -6,7 +6,7 @@ import ContentFooter from '../../Services/Screens/ContentFooter';
 import { motion } from 'framer-motion';
 import styles from '../Styles/ServicesPageN.module.css';
 
-const ServicesPageN = () => {
+const Services = () => {
   const location = useLocation();
   const queryParams = new URLSearchParams(location.search);
   const initialTab = queryParams.get('tab')
@@ -415,4 +415,4 @@ const ServicesPageN = () => {
   );
 };
 
-export default ServicesPageN;
+export default Services;

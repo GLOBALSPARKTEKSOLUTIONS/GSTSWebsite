@@ -5,11 +5,6 @@ import Header from "../../Home/Screens/Header";
 import ContentFooter from "./ContentFooter";
 
 const Technology = () => {
-  const [searchParams] = useSearchParams();
-  const serviceId = searchParams.get("service");
-  const [isMobile, setIsMobile] = useState(false);
-  const [selectedService, setSelectedService] = useState(serviceId || "apex");
-
   const servicesData = [
     {
       id: "apex",
@@ -165,6 +160,21 @@ const Technology = () => {
   ];
 
 
+  const [searchParams] = useSearchParams();
+  const serviceId = searchParams.get("service");
+  const [isMobile, setIsMobile] = useState(false);
+  const [selectedService, setSelectedService] = useState(serviceId || "apex");
+
+  useEffect(() => {
+    if (serviceId && serviceId !== selectedService) {
+      setSelectedService(serviceId);
+    }
+  }, [serviceId, selectedService]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [serviceId]);
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 768);
     checkMobile();
@@ -173,65 +183,29 @@ const Technology = () => {
   }, []);
 
   useEffect(() => {
-    if (!isMobile) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const serviceId = entry.target.id;
-            setSelectedService(serviceId);
-
-            // Scroll the nav item into view
-            const navItem = document.querySelector(
-              `.${styles.navItem}[data-service-id="${serviceId}"]`
-            );
-            if (navItem) {
-              navItem.scrollIntoView({
-                behavior: "smooth",
-                inline: "center",
-                block: "nearest",
-              });
-            }
-          }
-        });
-      },
-      { threshold: 0.5, rootMargin: "0px" }
-    );
-
-    servicesData.forEach((service) => {
-      const element = document.getElementById(service.id);
-      if (element) observer.observe(element);
-    });
-
-    return () => {
-      servicesData.forEach((service) => {
-        const element = document.getElementById(service.id);
-        if (element) observer.unobserve(element);
-      });
-    };
-  }, [isMobile]);
-
-  const handleNavClick = (id) => {
-    if (isMobile) {
-      const element = document.getElementById(id);
+    if (selectedService) {
+      const element = document.getElementById(selectedService);
       if (element) {
         element.scrollIntoView({
           behavior: "smooth",
-          inline: "center",
           block: "start",
         });
-        const sidebar = document.querySelector(`.${styles.sidebar}`);
-        if (sidebar) {
-          const sidebarHeight = sidebar.offsetHeight;
-          window.scrollBy({ top: -sidebarHeight, behavior: "smooth" });
-        }
       }
-    } else {
-      setSelectedService(id);
+    }
+  }, [selectedService]);
+
+  const handleNavClick = (id) => {
+    setSelectedService(id);
+
+    // Scroll the selected service into view
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start", // Adjust the position
+      });
     }
   };
-
 
   const sortedServices = [...servicesData].sort((a, b) =>
     a.name.localeCompare(b.name)
@@ -248,8 +222,7 @@ const Technology = () => {
               <button
                 key={service.id}
                 data-service-id={service.id}
-                className={`${styles.navItem} ${selectedService === service.id ? styles.active : ""
-                  }`}
+                className={`${styles.navItem} ${selectedService === service.id ? styles.active : ""}`}
                 onClick={() => handleNavClick(service.id)}
               >
                 <span className={styles.navText}>{service.name}</span>

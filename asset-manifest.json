@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GSTSWebsite/static/css/main.70d89b21.css",
-    "main.js": "/GSTSWebsite/static/js/main.f7115459.js",
+    "main.js": "/GSTSWebsite/static/js/main.40fdc605.js",
     "static/js/453.5cd65f79.chunk.js": "/GSTSWebsite/static/js/453.5cd65f79.chunk.js",
     "static/media/carouselImage10.jpg": "/GSTSWebsite/static/media/carouselImage10.a618db76eff05002e08a.jpg",
     "static/media/ServicesCOver.jpg": "/GSTSWebsite/static/media/ServicesCOver.d4e2036690be12b7bac7.jpg",
@@ -40,11 +40,11 @@
     "static/media/slick.woff": "/GSTSWebsite/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/GSTSWebsite/index.html",
     "main.70d89b21.css.map": "/GSTSWebsite/static/css/main.70d89b21.css.map",
-    "main.f7115459.js.map": "/GSTSWebsite/static/js/main.f7115459.js.map",
+    "main.40fdc605.js.map": "/GSTSWebsite/static/js/main.40fdc605.js.map",
     "453.5cd65f79.chunk.js.map": "/GSTSWebsite/static/js/453.5cd65f79.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.70d89b21.css",
-    "static/js/main.f7115459.js"
+    "static/js/main.40fdc605.js"
   ]
 }

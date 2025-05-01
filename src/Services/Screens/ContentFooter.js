@@ -89,7 +89,7 @@ const ContentFooter = () => {
             </div>
             <div className={styles.contactItem}>
               <Icon.GeoAlt className={styles.icon} />
-              <p>2/4/2, Tekula Basthi, Bellampalli, Hyderabad Adilabad, Telangana, 504251</p>
+              <p>2/4/2, Tekula Basthi, Bellampalli, Adilabad, Telangana, 504251</p>
             </div>
             <div className={styles.contactItem}>
               <Icon.Phone className={styles.icon} />

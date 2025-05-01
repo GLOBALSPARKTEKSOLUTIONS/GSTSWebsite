@@ -16,7 +16,7 @@ const ContentFooter = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll); // Cleanup
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   return (
@@ -24,7 +24,6 @@ const ContentFooter = () => {
       <div className={styles.footerContent}>
         <div className={styles.footerSection}>
           <h2 className={styles.sectionTitle}>Services</h2>
-
           <ul className={styles.footerList}>
             <Link to="/servicepage?tab=Application%20Integration%20Services&subtab=Our%20Approach">
               <li className={styles.footerItems}>Application Integration Services</li>
@@ -45,36 +44,34 @@ const ContentFooter = () => {
               <li className={styles.footerItems}>Web Development</li>
             </Link>
           </ul>
-
         </div>
-       
-        <div className={styles.footerSection}>
-  <h2 className={styles.sectionTitle}>Technologies</h2>
-  <ul className={styles.footerList}>
-    <Link to='/technologies?service=apex'>
-      <li>Oracle APEX (Application Express)</li>
-    </Link>
-    <Link to='/technologies?service=oracle-cloud'>
-      <li>Oracle Cloud</li>
-    </Link>
-    <Link to='/technologies?service=ebs'>
-      <li>Oracle E-Business Suite (EBS)</li>
-    </Link>
-    <Link to='/technologies?service=oracle-integration-cloud'>
-      <li>Oracle Integration Cloud (OIC)</li>
-    </Link>
-    <Link to='/technologies?service=vbcs'>
-      <li>Oracle Visual Builder Cloud Service (VBCS)</li>
-    </Link>
-    <Link to="/technologies?service=react">
-      <li>React JS</li>
-    </Link>
-    <Link to="/technologies?service=react-native">
-      <li>React Native</li>
-    </Link>
-  </ul>
-</div>
 
+        <div className={styles.footerSection}>
+          <h2 className={styles.sectionTitle}>Technologies</h2>
+          <ul className={styles.footerList}>
+            <Link to="/technologies?service=apex">
+              <li>Oracle APEX (Application Express)</li>
+            </Link>
+            <Link to="/technologies?service=oracle-cloud">
+              <li>Oracle Cloud</li>
+            </Link>
+            <Link to="/technologies?service=ebs">
+              <li>Oracle E-Business Suite (EBS)</li>
+            </Link>
+            <Link to="/technologies?service=oracle-integration-cloud">
+              <li>Oracle Integration Cloud (OIC)</li>
+            </Link>
+            <Link to="/technologies?service=vbcs">
+              <li>Oracle Visual Builder Cloud Service (VBCS)</li>
+            </Link>
+            <Link to="/technologies?service=react">
+              <li>React JS</li>
+            </Link>
+            <Link to="/technologies?service=react-native">
+              <li>React Native</li>
+            </Link>
+          </ul>
+        </div>
 
         <div className={styles.footerSection}>
           <h2 className={styles.sectionTitle}>Get in Touch</h2>
@@ -96,10 +93,10 @@ const ContentFooter = () => {
               <p>+1 (212) 935-5193</p>
             </div>
             <div className={styles.contactItem}>
-            <Icon.Envelope className={styles.icon} />
-  <a href="mailto:info@globalsparktek.com">
-    <span className={styles.emailText}>info@globalsparktek.com</span>
-  </a>
+              <Icon.Envelope className={styles.icon} />
+              <a href="mailto:info@globalsparktek.com">
+                <span className={styles.emailText}>info@globalsparktek.com</span>
+              </a>
             </div>
           </div>
         </div>
@@ -122,25 +119,52 @@ const ContentFooter = () => {
       <div className={styles.subContainer}>
         <div className={styles.footerContent}>
           <p className={styles.subFooterText}>
-          Copyright ©{new Date().getFullYear()}
+            Copyright ©{new Date().getFullYear()}
             <span className={styles.subFooter}> Global Spark Tek Solutions </span>
             <span className={styles.subFooterText}> - All Rights Reserved | </span>
-            <Link to='/privacy' className={styles.subFooter}> Privacy Policy </Link>
+            <Link to="/privacy" className={styles.subFooter}>
+              Privacy Policy
+            </Link>
           </p>
           <div className={styles.socialIcons}>
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+            <a
+              href="https://www.facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
               <FaFacebookF />
             </a>
-            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+            <a
+              href="https://www.twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
               <FaTwitter />
             </a>
-            <a href="https://www.linkedin.com/company/global-spark-tek/posts/?feedView=all" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+            <a
+              href="https://www.linkedin.com/company/global-spark-tek/posts/?feedView=all"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
               <FaLinkedinIn />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+            <a
+              href="https://www.instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
               <FaInstagram />
             </a>
-            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer" className={styles.socialLink}>
+            <a
+              href="https://www.youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.socialLink}
+            >
               <FaYoutube />
             </a>
           </div>

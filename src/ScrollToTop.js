@@ -5,15 +5,15 @@ const ScrollToTop = () => {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    if (pathname !== "/technologies") {
+      console.log("ScrollToTop: Scrolling to top for pathname:", pathname);
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    } else {
+      console.log("ScrollToTop: Skipped for /technologies");
+    }
   }, [pathname]);
 
   return null;
 };
 
 export default ScrollToTop;
-
-
-
-
-

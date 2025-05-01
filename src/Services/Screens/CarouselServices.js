@@ -11,7 +11,6 @@ const CarouselServices = () => {
         { src: require('../../Assets/vbcs1.png'), name: "Oracle VBCS", title: "Learn More", id: "vbcs" },
         { src: require('../../Assets/react.jfif'), name: "React JS", title: "Learn More", id: "react" },
         { src: require('../../Assets/react native.jfif'), name: "React Native", title: "Learn More", id: "react-native" },
-        { src: require('../../Assets/oracle cloud.jfif'), name: "Oracle Cloud", title: "Learn More", id: "oracle-cloud" },
     ];
 
     const containerRef = useRef();
